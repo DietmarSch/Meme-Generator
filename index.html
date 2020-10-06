@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+<body>
+<div id="container">
+        <div id="header">
+            <h1>Meme-Generator</h1>
+            <h2>Fill out the form to start creating memes!</h2>
+            <div id="inputBoxes">
+                <div>
+                    <div class="left">
+                        <label for="url">Image URL</label>
+                    </div>
+                    <div class="right">
+                        <input id='url' type="url" placeholder= "Image-Url" value="https://cdn.pixabay.com/photo/2020/10/03/07/38/nuts-5622826_960_720.jpg">
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="left">
+                        <label for="textTop">Text On Top</label>
+                    </div>
+                    <div class="right">
+                        <input type="text" id="inputTextTop" placeholder="TopText" value="Oberer Text">
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="left">
+                        <label for="textBottom">Text On Bottom</label>
+                    </div>
+                    <div class="right">
+                        <input type="text" id="inputTextBottom" placeholder="BottomText" value="unterer Text">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <button id='create' type="submit">Create Meme</button>
+                    </div>
+                </div>    
+            </div>
+          
+        </div>
+        <div id="main">
+            <div id="innerBox"> 
+                <div id="textTop" class="memText">Hier hat keiner was zu sagen...</div>
+                <div id="textBottom" class="memText">... ausser mir</div>
+            </div>  
+        </div>
+        <div id="footer">
+
+        </div>
+    </div>
+
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
